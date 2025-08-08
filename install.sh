@@ -8,7 +8,7 @@ set -e
 
 USERNAME="blutics"
 USERHOME="/home/$USERNAME"
-CONFIG_REPO="https://github.com/YOUR_USERNAME/arch-nix-nvim-setup"
+CONFIG_REPO="https://github.com/blutics/arch-nix-nvim-setup"
 
 log() {
   echo "[INFO] $1"
