@@ -9,13 +9,7 @@
   home.packages = with pkgs; [
     git
     neovim
-    htop
     curl
+    htop
   ];
-
-  programs.bash.enable = true;
-  programs.bash.shellAliases = {
-    ll = "ls -alh";
-    gs = "git status";
-  };
 }

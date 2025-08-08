@@ -1,5 +1,5 @@
 {
-  description = "Minimal Home Manager flake for blutics";
+  description = "Home Manager flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
@@ -12,8 +12,6 @@
       pkgs = import nixpkgs {
         system = "x86_64-linux";
       };
-      username = "blutics";
-      homeDirectory = "/home/blutics";
       configuration = import ./home.nix;
     };
   };
