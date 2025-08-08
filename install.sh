@@ -46,7 +46,7 @@ log "8. Home Manager 설정 적용"
 su - "$USERNAME" -c "
   cd \"$USERHOME/nix-config\"
   nix flake lock
-  home-manager switch --flake .#blutics
+  nix run .#homeConfigurations.blutics.activationPackage
 "
 
 log "초기화 완료"
