@@ -12,7 +12,7 @@
       pkgs = import nixpkgs {
         system = "x86_64-linux";
       };
-      configuration = import ./home.nix;
+      modules = [ ./home.nix ];
     };
   };
 }
