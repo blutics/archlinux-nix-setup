@@ -12,4 +12,6 @@
     curl
     htop
   ];
+
+  home.stateVersion = "24.05";
 }
